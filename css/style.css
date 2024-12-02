@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 150, 150);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background {
+  background: linear-gradient(90deg, rgba(255, 204, 204, 1) 0%, rgba(204, 255, 204, 1) 100%);
+  border: 3px solid black;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(15, 60px);
+  grid-template-rows: repeat(11, 50px);
+}
+
+#cat {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+}
+
+img {
+  width: 60px;
+  height: 50px;
+}
+
+.bag,
+.plate {
+  background-color: red;
+}
+
+#welcome {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  z-index: 20;
+}
+
+#welcome-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#start-button {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#congratulations {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  z-index: 20;
+}
+
+#restart-button {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
